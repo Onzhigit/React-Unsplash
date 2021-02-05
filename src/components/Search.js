@@ -16,7 +16,6 @@ const Search = () => {
      Api.getRandom().then (response => setResult(response.data))
    } else if (search.length) {
      Api.getImages(search).then (response => setResult(response.data.results))
-     console.log(result)
    }
  }
 
